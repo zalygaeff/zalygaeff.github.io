@@ -17,6 +17,6 @@ span.selected {
   padding: 3px 7px;
 }
 
-/** {
-  font-family: 'Avenir Next';
-}*/
+* {
+  font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
