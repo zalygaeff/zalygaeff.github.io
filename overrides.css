@@ -25,15 +25,16 @@ span.selected {
   list-style-type: none; 
 }
 
+dd {
+  margin-left: 0 !important;
+}
+
 @media only screen and (orientation : portrait) {
-  h1 {
+  h1, dt, dd {
     font-size: 24px !important;
   }
-  main {
+  .pa5 {
     padding: 2rem !important;
   }
 }
 
-dd {
-  margin-left: 0 !important;
-}
