@@ -22,12 +22,12 @@ a::after {
 
 #nav-experience a:link, #nav-experience a:visited { color: #FA5252; }
 #nav-experience a:link::after, #nav-experience a:visited::after { border-bottom: 1px solid rgba(250,82,82,0.30); }
-#nav-moodboard a:link { color: #7048E8; }
-#nav-moodboard a:link::after { border-bottom: 1px solid rgba(112,72,232,0.30); }
-#nav-reading a:link { color: #51CF66; }
-#nav-reading a:link::after { border-bottom: 1px solid rgba(81,207,102,0.30); }
-#nav-traveling a:link { color: #E8590C; }
-#nav-traveling a:link::after { border-bottom: 1px solid rgba(232,89,12,0.30); }
+#nav-moodboard a:link, #nav-moodboard a:visited { color: #7048E8; }
+#nav-moodboard a:link::after, #nav-moodboard a:visited::after { border-bottom: 1px solid rgba(112,72,232,0.30); }
+#nav-reading a:link, #nav-reading a:visited { color: #51CF66; }
+#nav-reading a:link::after, #nav-reading a:visited::after { border-bottom: 1px solid rgba(81,207,102,0.30); }
+#nav-traveling a:link, #nav-traveling a:visited { color: #E8590C; }
+#nav-traveling a:link::after, #nav-traveling a:visited::after { border-bottom: 1px solid rgba(232,89,12,0.30); }
 
 a:hover { color: #FA5252 !important; text-decoration: none; }
 a:hover::after { border-bottom: 1px solid rgba(250,82,82,0.45) !important; }
