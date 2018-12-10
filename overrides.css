@@ -1,8 +1,8 @@
 body {
-  background: #212529;
-  color: #fff;
-  font-family: 'IBM Plex Mono', monospace;
-  font-weight: 300;  
+  background: #fff;
+  color: #212529;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;  
 }
 
 a:link {
@@ -32,12 +32,23 @@ a::after {
 a:hover { color: #FA5252 !important; text-decoration: none; }
 a:hover::after { border-bottom: 1px solid rgba(250,82,82,0.45) !important; }
 
+
+
+@media (max-width:499px) {
+  header .f2 {
+    font-size: 28px;
+  }
+  header h1 {
+    margin-top: 30px !important;
+  }
+}
+
 h1, h2, h3 {
   font-weight: 500;
 }
 
 header h1 {
-  font-weight: 300;
+  font-weight: 400;
 }
 header ul li {
   list-style-type: none;
@@ -47,18 +58,18 @@ header ul li.active {
   font-weight: 500;
 }
 header ul li span {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h3.company {
-  font-weight: 300;
+  font-weight: 400;
 }
 .date {
   color: #FA5252;
 }
 hr {
   border: none;
-  border-bottom: 1px solid #343A40;
+  border-bottom: 1px solid #eee;
 }
 
 /*
@@ -128,7 +139,7 @@ hr {
 .reading dd { position: relative; }
 .reading .fav-book { position: absolute; left: -30px; top: 5px;}
 .reading h2 { font-weight: 300; }
-.reading-publisher { color: #495057; }
+/*.reading-publisher { color: #999; }*/
 .reading .thumbnails img {
   height: 90px;
   display:block; 
@@ -154,9 +165,9 @@ hr {
   color: #FA5252;
 }
 
-.travel-date {
-  color: #495057;
-}
+/*.travel-date {
+  color: #999;
+}*/
 
 .dtc {
   padding-right: 15px;
