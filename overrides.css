@@ -5,12 +5,12 @@ body {
   font-weight: 400;  
 }
 
-a:link {
+a:link, a:visited {
   color: #1C7ED6;
   text-decoration: none;
   position: relative;
 }
-a::after {
+a::after, a:visited::after {
   content:'';
   position:absolute;
   width: 100%;
@@ -137,11 +137,13 @@ hr {
   Reading
 */
 .reading dd { position: relative; }
-.reading .fav-book { position: absolute; left: -30px; top: 5px;}
+.reading ul li {position: relative}
+.reading .author {font-weight: 500; margin-right: 5px;}
+.reading .fav-book { position: absolute; left: -25px; top: 4px;}
 .reading h2 { font-weight: 300; }
 /*.reading-publisher { color: #999; }*/
 .reading .thumbnails img {
-  height: 90px;
+  height: 40px;
   display:block; 
   float: left;
 }
