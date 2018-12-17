@@ -140,7 +140,7 @@ hr {
 .reading ul li {position: relative}
 .reading .author {font-weight: 500; margin-right: 5px;}
 .reading .fav-book { position: absolute; left: -25px; top: 4px;}
-.reading h2 { font-weight: 300; }
+.reading h2 { font-weight: 400; }
 /*.reading-publisher { color: #999; }*/
 .reading .thumbnails img {
   height: 40px;
@@ -154,13 +154,10 @@ hr {
 /* 
   Traveling
 */
-/* #page-traveling {
-  background: #212529 url(traveling/map.svg) no-repeat center -40px;
-} */
 
 .traveling h2,
 .traveling h3 {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .traveling h2 small {
@@ -173,4 +170,10 @@ hr {
 
 .dtc {
   padding-right: 15px;
+}
+@media (max-width:999px) {
+  .dtc {
+    display: table-row;
+    padding-right: 0;
+  }
 }
