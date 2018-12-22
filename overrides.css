@@ -20,8 +20,9 @@ a::after, a:visited::after {
   border-bottom: 1px solid rgba(28, 126, 214, 0.3);
 }
 
-#nav-experience a:link, #nav-experience a:visited { color: #FA5252; }
-#nav-experience a:link::after, #nav-experience a:visited::after { border-bottom: 1px solid rgba(250,82,82,0.30); }
+
+#nav-experience a:link, #nav-experience a:visited { color: #22B8CF; }
+#nav-experience a:link::after, #nav-experience a:visited::after { border-bottom: 1px solid #C5F6FA; }
 #nav-moodboard a:link, #nav-moodboard a:visited { color: #7048E8; }
 #nav-moodboard a:link::after, #nav-moodboard a:visited::after { border-bottom: 1px solid rgba(112,72,232,0.30); }
 #nav-reading a:link, #nav-reading a:visited { color: #51CF66; }
@@ -48,18 +49,19 @@ h1, h2, h3 {
 }
 
 header h1 {
-  font-weight: 400;
+  font-weight: 500;
 }
 header ul li {
   list-style-type: none;
   display: inline;
+  font-weight: 500;
 }
 header ul li.active {
   font-weight: 500;
 }
-header ul li span {
+/*header ul li span {
   font-weight: 400;
-}
+}*/
 
 h3.company {
   font-weight: 400;
