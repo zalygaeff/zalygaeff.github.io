@@ -236,10 +236,11 @@ hr {
 */
 .reading dd { position: relative; }
 .reading ul li {position: relative}
-.reading .author {font-weight: 500; margin-right: 5px;}
-.reading .fav-book { position: absolute; left: -25px; top: 4px;}
-.reading .thumbnails img {
-  height: 40px;
+.reading .author {font-weight: 500; margin-right: 5px; display: block}
+.reading .fav-book { position: absolute; left: -25px; top: 23px;}
+.reading .thumbnails img,
+.gr_grid_book_container img {
+  height: 30px;
   display:block; 
   float: left;
 }
