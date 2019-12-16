@@ -1,0 +1,245 @@
+/* Core */
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+a:link, a:visited {
+	color: blue;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+}
+h1, h2, h3, h4, h5 {font-weight: normal;}
+
+
+/*header {
+	-webkit-backdrop-filter: blur(10px);
+	position: fixed;
+	width: 100%;
+	background: rgba(255,255,255,0.90);
+}*/
+
+
+/*
+
+	Portfolio / Work in Progress
+
+*/
+.wip a:link::after,
+.wip a:hover::after  {
+  border: none !important;
+}
+
+.wip { /* Masonry container */
+  column-count: 4;
+  column-gap: 1em;
+}
+
+.wip .item { /* Masonry bricks or child elements */
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1920px) {
+  .wip {
+    column-count: 5;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
+  .wip {
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  .wip {
+    column-count: 3;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .wip {
+    column-count: 2;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 240px) {
+  .wip {
+    column-count: 1;
+  }
+}
+
+
+/*
+
+	Moodboard
+
+*/
+.moodboard a:link::after,
+.moodboard a:hover::after  {
+  border: none !important;
+}
+
+.moodboard { /* Masonry container */
+  column-count: 4;
+  column-gap: 1em;
+}
+
+.moodboard .item { /* Masonry bricks or child elements */
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1920px) {
+  .moodboard {
+    column-count: 5;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
+  .moodboard {
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  .moodboard {
+    column-count: 3;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .moodboard {
+    column-count: 2;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 240px) {
+  .moodboard {
+    column-count: 1;
+  }
+}
+
+.moodboard .content.link a {
+	color: #fff;
+	display: block;
+	padding: 40px 30px 180px;
+	background: #111;
+}
+.moodboard .content.link a:hover {
+	background: blue;
+}
+
+
+/*
+
+	Bookshelf
+
+*/
+.bookshelf a:link::after,
+.bookshelf a:hover::after  {
+  border: none !important;
+}
+
+.bookshelf { /* Masonry container */
+  column-count: 20;
+  column-gap: 1em;
+}
+
+.bookshelf .item { /* Masonry bricks or child elements */
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1920px) {
+  .bookshelf {
+    column-count: 20;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
+  .bookshelf {
+    column-count: 16;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  .bookshelf {
+    column-count: 12;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .bookshelf {
+    column-count: 6;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 240px) {
+  .bookshelf {
+    column-count: 6;
+  }
+}
+
+.reading dd { position: relative; }
+.reading ul li {position: relative; font-style: italic;}
+.reading .author {font-weight: 500; margin-right: 3px; font-style: normal;}
+.reading .fav-book { position: absolute; left: -25px; top: 3px; font-style: normal;}
+.reading .thumbnails img,
+.gr_grid_book_container img {
+  height: 30px;
+  display:block; 
+  float: left;
+}
+
+
+/*
+
+	Traveling
+
+*/
+.traveling .dtc {
+  padding-right: 15px;
+}
+@media (max-width:999px) {
+  .traveling .dtc {
+    display: table-row;
+    padding-right: 0;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 1023px) {
+	#profile-page .dt {
+		display: block;
+		width: 100%;
+	}
+	#profile-page .dtc {
+		display: block;
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 1599px) {
+	.w-50 {
+		width: 100%;
+	}
+	.diamond section {
+		width: 49% !important;
+	}
+}
