@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5 {font-weight: normal;}
 
 @media only screen and (min-width: 1920px) {
   .wip {
-    column-count: 5;
+    column-count: 4;
   }
 }
 
