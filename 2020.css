@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5 {font-weight: normal;}
 
 @media only screen and (min-width: 1920px) {
   .wip {
-    column-count: 4;
+    column-count: 3;
   }
 }
 
@@ -130,13 +130,14 @@ h1, h2, h3, h4, h5 {font-weight: normal;}
 }
 
 .moodboard .content.link a {
-	color: #fff;
+	/*color: #fff;*/
 	display: block;
-	padding: 40px 30px 180px;
-	background: #111;
+	padding: 30px 30px 180px;
+	/*background: #111;*/
+  border: 1px solid blue;
 }
 .moodboard .content.link a:hover {
-	background: blue;
+  border: 1px solid red;
 }
 
 
@@ -213,7 +214,10 @@ h1, h2, h3, h4, h5 {font-weight: normal;}
 .traveling .dtc {
   padding-right: 15px;
 }
-@media (max-width:999px) {
+/*.traveling .dtc:last-child {
+  padding-right: 0;
+}*/
+@media (max-width:1499px) {
   .traveling .dtc {
     display: table-row;
     padding-right: 0;
@@ -223,23 +227,4 @@ h1, h2, h3, h4, h5 {font-weight: normal;}
 
 
 
-@media only screen and (max-width: 1023px) {
-	#profile-page .dt {
-		display: block;
-		width: 100%;
-	}
-	#profile-page .dtc {
-		display: block;
-		width: 100%;
-	}
 
-}
-
-@media only screen and (max-width: 1599px) {
-	.w-50 {
-		width: 100%;
-	}
-	.diamond section {
-		width: 49% !important;
-	}
-}
