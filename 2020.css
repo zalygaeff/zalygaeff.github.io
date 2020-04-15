@@ -1,9 +1,16 @@
-/* Core */
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+@font-face {
+  font-family: 'FormularMedium';
+  src: url('formular-medium.eot');
+  src:
+       url('formular-medium.eot?#iefix') format('embedded-opentype'),
+       url('formular-medium.woff') format('woff'),
+       url('formular-medium.ttf') format('truetype'),
+       url('formular-medium.svg#Formular-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+html { font-family: 'FormularMedium',sans-serif; }
+
 a:link, a:visited {
 	color: blue;
 	text-decoration: none;
@@ -11,60 +18,48 @@ a:link, a:visited {
 a:hover {
 	color: red;
 }
-h1, h2, h3, h4, h5 {font-weight: normal;}
+
+h1, h2, h3, h4, h5 {font-weight: normal !important;}
 
 
-/*header {
-	-webkit-backdrop-filter: blur(10px);
-	position: fixed;
-	width: 100%;
-	background: rgba(255,255,255,0.90);
-}*/
-
-
-/*
-
-	Portfolio / Work in Progress
-
-*/
 .wip a:link::after,
 .wip a:hover::after  {
   border: none !important;
 }
 
 .wip { /* Masonry container */
-  column-count: 4;
-  column-gap: 1em;
+  column-count: 2;
+  column-gap: 0.3em;
 }
 
 .wip .item { /* Masonry bricks or child elements */
   display: inline-block;
-  margin: 0 0 1em;
+  margin: 0 0 0.3em;
   width: 100%;
 }
 
 @media only screen and (min-width: 1920px) {
   .wip {
-    column-count: 4;
+    column-count: 2;
   }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1900px) {
   .wip {
-    column-count: 4;
+    column-count: 2;
   }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1599px) {
   .wip {
-    column-count: 3;
+    column-count: 2;
   }
 }
 
 /* Masonry on medium-sized screens */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .wip {
-    column-count: 2;
+    column-count: 1;
   }
 }
 
@@ -74,157 +69,3 @@ h1, h2, h3, h4, h5 {font-weight: normal;}
     column-count: 1;
   }
 }
-
-
-/*
-
-	Moodboard
-
-*/
-.moodboard a:link::after,
-.moodboard a:hover::after  {
-  border: none !important;
-}
-
-.moodboard { /* Masonry container */
-  column-count: 4;
-  column-gap: 1em;
-}
-
-.moodboard .item { /* Masonry bricks or child elements */
-  display: inline-block;
-  margin: 0 0 1em;
-  width: 100%;
-}
-
-@media only screen and (min-width: 1920px) {
-  .moodboard {
-    column-count: 5;
-  }
-}
-
-@media only screen and (min-width: 1600px) and (max-width: 1900px) {
-  .moodboard {
-    column-count: 3;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1599px) {
-  .moodboard {
-    column-count: 3;
-  }
-}
-
-/* Masonry on medium-sized screens */
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .moodboard {
-    column-count: 2;
-  }
-}
-
-/* Masonry on small screens */
-@media only screen and (max-width: 767px) and (min-width: 240px) {
-  .moodboard {
-    column-count: 1;
-  }
-}
-
-.moodboard .content.link a {
-	/*color: #fff;*/
-	display: block;
-	padding: 30px 30px 180px;
-	/*background: #111;*/
-  border: 1px solid blue;
-}
-.moodboard .content.link a:hover {
-  border: 1px solid red;
-}
-
-
-/*
-
-	Bookshelf
-
-*/
-.bookshelf a:link::after,
-.bookshelf a:hover::after  {
-  border: none !important;
-}
-
-.bookshelf { /* Masonry container */
-  column-count: 20;
-  column-gap: 1em;
-}
-
-.bookshelf .item { /* Masonry bricks or child elements */
-  display: inline-block;
-  margin: 0 0 1em;
-  width: 100%;
-}
-
-@media only screen and (min-width: 1920px) {
-  .bookshelf {
-    column-count: 20;
-  }
-}
-
-@media only screen and (min-width: 1600px) and (max-width: 1900px) {
-  .bookshelf {
-    column-count: 16;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1599px) {
-  .bookshelf {
-    column-count: 12;
-  }
-}
-
-/* Masonry on medium-sized screens */
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .bookshelf {
-    column-count: 6;
-  }
-}
-
-/* Masonry on small screens */
-@media only screen and (max-width: 767px) and (min-width: 240px) {
-  .bookshelf {
-    column-count: 6;
-  }
-}
-
-.reading dd { position: relative; }
-.reading ul li {position: relative; font-style: italic;}
-.reading .author {font-weight: 500; margin-right: 3px; font-style: normal;}
-.reading .fav-book { position: absolute; left: -25px; top: 3px; font-style: normal;}
-.reading .thumbnails img,
-.gr_grid_book_container img {
-  height: 30px;
-  display:block; 
-  float: left;
-}
-
-
-/*
-
-	Traveling
-
-*/
-.traveling .dtc {
-  padding-right: 15px;
-}
-/*.traveling .dtc:last-child {
-  padding-right: 0;
-}*/
-@media (max-width:1499px) {
-  .traveling .dtc {
-    display: table-row;
-    padding-right: 0;
-  }
-}
-
-
-
-
-
