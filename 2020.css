@@ -29,13 +29,14 @@ h1, h2, h3, h4, h5 {font-weight: normal !important;}
 
 .wip { /* Masonry container */
   column-count: 2;
-  column-gap: 0.3em;
+  column-gap: 1em;
 }
 
 .wip .item { /* Masonry bricks or child elements */
   display: inline-block;
-  margin: 0 0 0.3em;
+  margin: 0 0 1em;
   width: 100%;
+  /*float: left;*/
 }
 
 @media only screen and (min-width: 1920px) {
